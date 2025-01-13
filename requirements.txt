@@ -3,4 +3,4 @@ langchain
 PyPDF2
 tqdm
 pydantic
-dotenv 
+python-dotenv

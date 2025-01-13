@@ -1,0 +1,6 @@
+chromadb
+langchain
+PyPDF2
+tqdm
+pydantic
+dotenv 

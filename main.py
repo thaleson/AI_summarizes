@@ -60,9 +60,9 @@ if st.button("Gerar Resumo"):
                 )
         
                 st.write("---")  # Separador para visualizar melhor o resumo
-                st.markdown(f"### Resumo do Texto em: {target_language}")
-                st.markdown(response)  # Exibe o resumo em Markdown
-                # Exibe o resumo no idioma desejado
+                st.chat_message("human").markdown(f"### Resumo do Texto em: {target_language}")
+                st.chat_message("ai").markdown(response)(response.content)
+          
             except Exception as e:
                 st.error(f"Erro ao consultar o modelo: {e}")
     else:

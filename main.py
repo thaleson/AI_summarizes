@@ -61,7 +61,7 @@ if st.button("Gerar Resumo"):
         
                 st.write("---")  # Separador para visualizar melhor o resumo
                 st.chat_message("human").write(f"### Resumo do Texto em: {target_language}")
-                st.chat_message("ai").write(response)(response.content)
+                st.chat_message("ai").write(response.content)
           
             except Exception as e:
                 st.error(f"Erro ao consultar o modelo: {e}")
